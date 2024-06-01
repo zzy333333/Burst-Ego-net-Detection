@@ -83,6 +83,5 @@ int main(){
 		tmp.clear();
 		qnow.push(make_pair(make_pair(u, v), make_pair(t, i)));
 	}
-	cerr<<"end"<<endl;
 	return 0;
 }
