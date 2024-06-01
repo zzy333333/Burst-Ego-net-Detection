@@ -9,8 +9,6 @@ const double eps = 1e-9;
 int n = 0, m = 0, k = 10, T = 10000000;
 
 int main(){
-	freopen("input.in","r",stdin);
-	freopen("output6.out","w",stdout);
 	srand(time(0));
 	scanf("%d%d", &n, &m);
 	int pretime = -1;
