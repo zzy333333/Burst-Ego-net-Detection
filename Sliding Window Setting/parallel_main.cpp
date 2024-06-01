@@ -197,8 +197,6 @@ void query(Operation op){
 }
 
 int main(){
-	freopen("input.in","r",stdin);
-	freopen("output.out","w",stdout);
 	srand(time(0));
 	scanf("%d%d", &n, &m);
 	pre = new Graph(n);
@@ -281,11 +279,9 @@ int main(){
 		tmp.push(op);
 		qnow.push(make_pair(make_pair(u, v), make_pair(t, i)));
 	}
-	cerr<<"prepare"<<endl;
 	#pragma omp parallel for
 	for(int i = 1; i <= 1000000000; i++){
 		update();
 	}
-	cerr<<"end"<<endl;
 	return 0;
 }
