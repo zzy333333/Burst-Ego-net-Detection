@@ -12,8 +12,6 @@ int n = 0, m = 0, k = 10, T = 10000000;
 queue<pair<pair<int, int>, pair<int, int> > >qnow, qpre;// u v t id
 
 int main(){
-	freopen("input.in","r",stdin);
-	freopen("ans.out","w",stdout);
 	srand(time(0));
 	scanf("%d%d", &n, &m);
 	Graph *pre = new Graph(n);
