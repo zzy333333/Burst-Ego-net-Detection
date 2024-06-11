@@ -8,7 +8,7 @@ long long _hash(int A, int B){
 }
 
 long long __hash(int A, int B){
-	return 1234567799ll*A+B;
+	return 1000000000ll*A+B;
 }
 
 Graph::Graph(int _n){
@@ -20,8 +20,8 @@ Graph::Graph(int _n){
 	sample_edge.resize(n+5);
 	density.resize(n+5);
 	is_burst.resize(n+5);
-	hs.resize(19999999);
-	match.resize(19999999);
+	hs.resize(59999999);
+	match.resize(59999999);
 }
 
 Graph::~Graph(){
