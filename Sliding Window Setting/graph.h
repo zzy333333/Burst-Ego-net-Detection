@@ -16,10 +16,11 @@ using namespace std;
 class Graph{
 	private:
 		int n, m;
+		int K, nb, ng;
 		vector<unordered_set<int> >neighbor;//ignore repeated edge
 		vector<unordered_multiset<int> >edge;
 		vector<unordered_set<int> >sample_neighbor;
-		vector<unordered_set<long long> >sample_edge;// vertex edge_id
+		unordered_map<int, pair<int, int> >sample_edge;// vertex edge_id
 		unordered_map<long long, int>edge_count;//number of repeated edge
 		vector<int>hs;
 		vector<long long>match;

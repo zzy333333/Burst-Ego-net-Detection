@@ -14,10 +14,12 @@ long long __hash(int A, int B){
 Graph::Graph(int _n){
 	n = _n;
 	m = 0;
+	K = 1e5;
+	nb = 0;
+	ng = 0;
 	neighbor.resize(n+5);
 	edge.resize(n+5);
 	sample_neighbor.resize(n+5);
-	sample_edge.resize(n+5);
 	density.resize(n+5);
 	is_burst.resize(n+5);
 	hs.resize(59999999);
@@ -27,6 +29,9 @@ Graph::Graph(int _n){
 Graph::~Graph(){
 	n = 0;
 	m = 0;
+	K = 0;
+	nb = 0;
+	ng = 0;
 	neighbor.clear();
 	edge.clear();
 	sample_neighbor.clear();
